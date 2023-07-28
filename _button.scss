@@ -1,0 +1,21 @@
+button[type="submit"],
+button.btn {
+    background-color: $Dark-Slate-Grey;
+    padding: 1.3em 2em;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    color: $White;
+    font-size: 1.05em;
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.5ms;
+    &:active, 
+    &:hover {
+      transform: scale(0.98);
+      background: linear-gradient(45deg, $Tomato, hsl(4, 100%, 57%), hsl(4, 95%, 67%));
+      box-shadow: 1px 3px 2px 2px $Tomato;
+    }
+  }
+  

@@ -1,0 +1,100 @@
+button[type=submit],
+button.btn {
+  background-color: hsl(234, 29%, 20%);
+  padding: 1.3em 2em;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.05em;
+  display: block;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.5ms;
+}
+button[type=submit]:active, button[type=submit]:hover,
+button.btn:active,
+button.btn:hover {
+  transform: scale(0.98);
+  background: linear-gradient(45deg, hsl(4, 100%, 67%), hsl(4, 100%, 57%), hsl(4, 95%, 67%));
+  box-shadow: 1px 3px 2px 2px hsl(4, 100%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto-Bold";
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.success-message {
+  padding: 20vh 2rem 2rem 2rem;
+  min-height: 100vh;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+}
+section.success-message h1 {
+  font-size: 2.5em;
+  margin: 2rem 0;
+}
+section.success-message button.float-down {
+  position: absolute;
+  width: 80%;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 700px) {
+  section.success-message {
+    padding: 2rem;
+    min-height: fit-content;
+    width: 50%;
+    border-radius: 0.5rem;
+  }
+  section.success-message button.float-down {
+    position: static;
+    transform: none;
+    margin: 1.8rem auto auto auto;
+  }
+}
+
+/*# sourceMappingURL=submit.css.map */
